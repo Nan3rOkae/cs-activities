@@ -1,6 +1,5 @@
 import { Navbar, Footer, Button } from "../components";
 import { allActivities } from "../components/data";
-import bgColor from "../assets/bgColor.png";
 import { Link } from "react-router-dom";
 
 import {
@@ -21,7 +20,6 @@ export default function App() {
     <>
       <Navbar />
       <section
-        //    style={{ backgroundImage: `url(${bgColor})` }}
         id="home"
         className="w-full flex flex-col justify-start items-center min-h-screen gap-10 pt-28 max-container ">
         <div className=" xl:w-1/2 h-1/2 justify-center items-center w-full flex flex-col">
