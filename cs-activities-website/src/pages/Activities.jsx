@@ -19,12 +19,12 @@ export default function Activities() {
         <div className="flex flex-row w-full justify-center">
           <h1 className="font-bold text-4xl">Gear up for some fun!</h1>
         </div>
-        <Search />
+        {/* <Search /> */}
         <div className="justify-center items-start grid grid-cols-3 gap-[60px] mt-10">
           {allActivities.map((item, index) => (
             <Link
               key={index}
-              href={item.path}
+              to={`/details/${index}`}
               className="block shadow-md px-8 py-8 border-black border-1 hover:text-yellow-500 ">
               <Card className="w-full h-[150px]">
                 <CardHeader className="flex gap-3">

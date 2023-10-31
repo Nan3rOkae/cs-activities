@@ -1,4 +1,5 @@
 import { navLinks } from "./data";
+import { Link } from "react-router-dom";
 import hamburger from "../assets/hamburger.svg";
 
 export default function Navbar() {
@@ -8,9 +9,12 @@ export default function Navbar() {
         <ul className="flex-1 flex justify-start px-24 items-center gap-16 max-lg:hidden">
           {navLinks.map((item) => (
             <li key={item.label}>
-              <a className="hover:text-yellow-500 font-normal" href={item.href}>
+              <Link
+                className="hover:text-yellow-500 font-normal"
+                key={item.href}
+                to={item.href}>
                 {item.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

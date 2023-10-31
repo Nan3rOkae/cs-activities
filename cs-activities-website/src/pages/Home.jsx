@@ -38,8 +38,7 @@ export default function App() {
           {activitiesToRender.map((item, index) => (
             <Link
               key={index}
-              href={item.href}
-              to={item.path}
+              to={`/details/${index}`}
               className="block shadow-md px-8 py-8 border-black border-1 hover:text-yellow-500 ">
               <Card className="w-full h-[150px]">
                 <CardHeader className="flex gap-3">
