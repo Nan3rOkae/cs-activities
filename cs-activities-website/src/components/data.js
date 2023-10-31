@@ -1,3 +1,5 @@
+
+
 export const navLinks = [
   { href: "/", label: "Home" },
   { href: "/activities", label: "Activities" },
@@ -20,13 +22,13 @@ export const filter = [
 export const allActivities = [
   {
     name: "Binary Numbers",
-    instructionPDF: "../assets/BinaryNumbersInstructions..pdf",
-    worksheetPDF: "../assets/BinaryNumbersWorksheet.pdf",
-    keyPDF: "../assets/BinaryNumbersKey.pdf",
+    instructionPDF: "/BNInstructions.pdf",
+    worksheetPDF: "/BinaryNumbersWorksheet.pdf",
+    keyPDF: "/assets/BinaryNumbersKey.pdf",
     subdesc: "Laptop",
-    path: "/details/:activityIndex",
+    path: "/details/:activityIndex",      
   },
-  {
+  {           
     name: "Blocky",
     description: "Something will go here about the activity",
     instructionPDF: "../assets/BlocklyGamesMazeActivity.pdf",

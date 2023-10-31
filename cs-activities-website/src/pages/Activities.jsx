@@ -17,10 +17,12 @@ export default function Activities() {
       <Navbar />
       <div className="w-full flex flex-col justify-start items-center min-h-screen gap-10 pt-28 max-container">
         <div className="flex flex-row w-full justify-center">
-          <h1 className="font-bold text-4xl">Gear up for some fun!</h1>
+          <h1 className="font-bold text-4xl max-sm:text-3xl">
+            Gear up for some fun!
+          </h1>
         </div>
         {/* <Search /> */}
-        <div className="justify-center items-start grid grid-cols-3 gap-[60px] mt-10">
+        <div className="justify-center items-start grid grid-cols-3 max-sm:grid-cols-1 gap-[60px] mt-10 max-sm:mt-2">
           {allActivities.map((item, index) => (
             <Link
               key={index}
