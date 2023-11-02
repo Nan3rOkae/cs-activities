@@ -22,13 +22,13 @@ export const filter = [
 export const allActivities = [
   {
     name: "Binary Numbers",
-    instructionPDF: "/BNInstructions.pdf",
+    instructionPDF: "cs-activities-website/src/public/BNInstructions.pdf",
     worksheetPDF: "/BinaryNumbersWorksheet.pdf",
     keyPDF: "/assets/BinaryNumbersKey.pdf",
     subdesc: "Laptop",
-    path: "/details/:activityIndex",      
+    path: "/details/:activityIndex",
   },
-  {           
+  {
     name: "Blocky",
     description: "Something will go here about the activity",
     instructionPDF: "../assets/BlocklyGamesMazeActivity.pdf",
