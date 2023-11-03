@@ -1,7 +1,7 @@
 import { navLinks } from "./data";
 import { Link } from "react-router-dom";
-import hamburger from "../public/hamburger.svg";
-import BNInstructions from "../public/BNInstructions.pdf";
+import hamburger from "../../public/hamburger.svg";
+
 
 export default function Navbar() {
   return (
@@ -20,7 +20,7 @@ export default function Navbar() {
           ))}
         </ul>
         <div className="hidden max-lg:block justify-end">
-          {/* <img src={hamburger} alt="hamburger" width={25} high={25} /> */}
+          <img src={hamburger} alt="hamburger" width={25} high={25} />
         </div>
       </nav>
     </header>

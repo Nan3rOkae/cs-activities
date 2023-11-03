@@ -22,9 +22,9 @@ export const filter = [
 export const allActivities = [
   {
     name: "Binary Numbers",
-    instructionPDF: "cs-activities-website/src/public/BNInstructions.pdf",
+    instructionPDF: "/BNInstructions.pdf",
     worksheetPDF: "/BinaryNumbersWorksheet.pdf",
-    keyPDF: "/assets/BinaryNumbersKey.pdf",
+    keyPDF: " /BinaryNumbersKey.pdf",
     subdesc: "Laptop",
     path: "/details/:activityIndex",
   },

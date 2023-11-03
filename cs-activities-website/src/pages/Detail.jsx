@@ -16,11 +16,11 @@ export default function ActivityDetails() {
           <p>{activity.description}</p>
           <p>{activity.subdesc}</p>
           <a
-            href={"cs-activities-websitesrcpublicBNInstructions.pdf"}
-            // target="_blank"
+            href={activity.instructionPDF}
+            target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500  mt-4">
-            Testing
+            Instructions
           </a>
         </div>
         <Footer />
