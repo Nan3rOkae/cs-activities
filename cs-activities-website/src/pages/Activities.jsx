@@ -27,7 +27,7 @@ export default function Activities() {
             <Link
               key={index}
               to={`/details/${index}`}
-              className="block shadow-md px-8 py-8 border-black border-1 hover:text-yellow-500 ">
+              className="block shadow-md px-8 py-8 border-black border-1 hover:text-yellow-500 rounded-xl">
               <Card className="w-full h-[150px]">
                 <CardHeader className="flex gap-3">
                   <div className="flex flex-col">
@@ -37,8 +37,11 @@ export default function Activities() {
                 <CardBody>
                   <p className="mt-2">{item.description}</p>
                 </CardBody>
-                <CardBody>
-                  <p className="mt-2 font-medium">{item.subdesc}</p>
+                <CardBody className="flex flex-row items-center space-x-1 w-[200px] mt-2 justify-start">
+                  <img src={item.img} alt={item.name} width={30} height={10} />
+                  <p className="mt-2 font-medium hover:text-black">
+                    {item.subdesc}
+                  </p>
                 </CardBody>
               </Card>
             </Link>

@@ -1,6 +1,6 @@
 import { navLinks } from "./data";
 import { Link } from "react-router-dom";
-import hamburger from "../../public/hamburger.svg";
+// import hamburger from "../public/hamburger.svg";
 
 
 export default function Navbar() {
@@ -19,8 +19,8 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-        <div className="hidden max-lg:block justify-end">
-          <img src={hamburger} alt="hamburger" width={25} high={25} />
+        <div className="hidden max-lg:block justify-start ">
+          {/* <img src={hamburger} alt="hamburger" width={25} high={25} /> */}
         </div>
       </nav>
     </header>
