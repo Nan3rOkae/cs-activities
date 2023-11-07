@@ -1,6 +1,8 @@
 import React from "react";
 import { Navbar, Footer } from "../components";
 import { allActivities } from "../components/data";
+import { Link } from "react-router-dom";
+import { IoMdArrowBack } from "react-icons/io";
 import { useParams } from "react-router-dom";
 
 export default function ActivityDetails() {
@@ -11,6 +13,13 @@ export default function ActivityDetails() {
     <>
       <Navbar />
       <div className="w-full flex flex-col justify-start items-center min-h-screen gap-2 pt-28 pb-28 max-container ">
+        <Link
+          className=" block md:hidden justify-start items-start w-full px-10"
+          to="/activities">
+          <button className="text-4xl">
+            <IoMdArrowBack />
+          </button>
+        </Link>
         <div className="flex flex-row items-center space-x-1 mt-2 justify-center ">
           <h1 className=" text-4xl max-sm:text-2xl font-bold px-2 flex justify-center ">
             {activity.name}
@@ -27,14 +36,14 @@ export default function ActivityDetails() {
           </p>
         </div>
         <div className="flex h-full w-full justify-center items-center">
-          <p className="px-2 mt-1 w-4/5 text-lg justify-center items-center">
+          <p className="px-2 mt-1 w-4/5 text-lg justify-center items-center max-sm:text-sm">
             {activity.longDescription}
           </p>
         </div>
         <div className="flex justify-center font-medium text-xl underline mt-10 max-sm:text-sm max-md:text-base">
           Click on the text to access each activity documentation
         </div>
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center text-2xl items-center max-sm:text-2xl">
           {activity.instructionPDF && (
             <a
               href={activity.instructionPDF?.trim()}
