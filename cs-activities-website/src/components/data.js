@@ -96,9 +96,13 @@ export const allActivities = [
   },
   {
     name: "Scratch",
-    description: "Something will go here about the activity",
-    href: "link to page",
-    subdesc: "Laptop",
+    description:
+      "Scratch is a high-level block-based visual programming language and website aimed ...",
+    longDescription:
+      "Scratch is a high-level block-based visual programming language and website aimed primarily at children as an educational tool, with a target audience of ages 8 to 16.",
+    JumpingGameScratchInstrcutionPDF: "/JumpingGameScratchInstruction.pdf",
+    StoryBoardScratchInstructionPDF: "/StoryBoardScratchInstruction.pdf",
+    subdesc: "Laptop Activity",
     path: "/details/:activityIndex",
     img: "/Laptop.png",
   },
@@ -110,7 +114,7 @@ export const allActivities = [
       "Snap! is a free block-based educational graphical programming language and online community allowing students to explore, create, and remix interactive animations, games, stories, and more, while learning about mathematical and computational ideas.",
     DrawAInstructionsPDF: "/TeacherInstructtionsSnap.pdf",
     // worksheetPDF: "/StudentSnapActivity.pdf",
-    subdesc: "Laptop",
+    subdesc: "Laptop Activity",
     path: "/details/:activityIndex",
     img: "/Laptop.png",
   },

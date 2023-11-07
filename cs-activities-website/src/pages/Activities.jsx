@@ -15,19 +15,19 @@ export default function Activities() {
   return (
     <>
       <Navbar />
-      <div className="w-full flex flex-col justify-start items-center min-h-screen gap-10 pt-28 max-container">
+      <div className="w-full flex flex-col justify-start items-center min-h-screen gap-10 pt-28 pb-28 max-container">
         <div className="flex flex-row w-full justify-center">
           <h1 className="font-bold text-4xl max-sm:text-3xl">
             Gear up for some fun!
           </h1>
         </div>
         {/* <Search /> */}
-        <div className="justify-center items-start grid grid-cols-3 max-sm:grid-cols-1 gap-[60px] mt-10 max-sm:mt-2">
+        <div className="justify-center items-start grid grid-cols-3 max-sm:grid-cols-1 gap-[60px] max-lg:grid-cols-2 px-10 mt-10 max-sm:mt-2">
           {allActivities.map((item, index) => (
             <Link
               key={index}
               to={`/details/${index}`}
-              className="block shadow-md px-8 py-8 border-black border-1 hover:text-yellow-500 rounded-xl">
+              className="block shadow-md px-8 py-8 border-black border-1 hover:text-yellow-500 rounded-xl max-sm:w-[400px]">
               <Card className="w-full h-[150px]">
                 <CardHeader className="flex gap-3">
                   <div className="flex flex-col">

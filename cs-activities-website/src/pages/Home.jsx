@@ -17,7 +17,7 @@ export default function App() {
   return (
     <>
       <Navbar />
-      <section className="w-full flex flex-col justify-start items-center min-h-screen gap-10 pt-28 max-container ">
+      <section className="w-full flex flex-col justify-start items-center min-h-screen gap-10 pt-28 pb-28 max-container ">
         <div className=" xl:w-1/2 h-1/2 justify-center items-center w-full flex flex-col">
           <h1 className="text-8xl max-sm:text-4xl font-bold mt-20"> Welcome</h1>
           <p className="font-normal mt-[16px] text-center text-xl max-sm:w-80">
@@ -32,12 +32,12 @@ export default function App() {
             Popular Activities
           </h1>
         </div>
-        <div className="justify-center items-start grid grid-cols-3 max-sm:grid-cols-1 sm:p-6 max-md:grid-cols-2 gap-[60px] mt-1 max-sm:mt-2">
+        <div className="justify-center items-start grid grid-cols-3 max-sm:grid-cols-1 sm:p-6 max-md:grid-cols-2 gap-[60px] px-10 max-lg:grid-cols-2 mt-1 max-sm:mt-2">
           {activitiesToRender.map((item, index) => (
             <Link
               key={index}
               to={`/details/${index}`}
-              className="block shadow-md px-8 py-8 border-black border-1 hover:text-yellow-500 rounded-xl">
+              className="block shadow-md px-8 py-8 border-black border-1 hover:text-yellow-500 rounded-xl max-sm:w-[400px]">
               <Card className="w-full h-[150px]">
                 <CardHeader className="flex gap-3">
                   <div className="flex flex-col">
