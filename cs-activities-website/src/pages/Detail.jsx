@@ -36,12 +36,12 @@ export default function ActivityDetails() {
           </p>
         </div>
         <div className="flex h-full w-full justify-center items-center">
-          <p className="px-2 mt-1 w-4/5 text-lg justify-center items-center max-sm:text-sm">
+          <p className="px-2 mt-1 w-4/5 text-lg justify-center items-center max-sm:text-md">
             {activity.longDescription}
           </p>
         </div>
-        <div className="flex justify-center font-medium text-xl underline mt-10 max-sm:text-sm max-md:text-base">
-          Click on the text to access each activity documentation
+        <div className="flex justify-center font-medium text-xl underline mt-10 max-sm:text-sm  max-md:text-base">
+          Click on the blue text to access each activity documentation
         </div>
         <div className="flex flex-col justify-center text-2xl items-center max-sm:text-2xl">
           {activity.instructionPDF && (

@@ -20,7 +20,7 @@ export default function App() {
       <section className="w-full flex flex-col justify-start items-center min-h-screen gap-10 pt-28 pb-28 max-container ">
         <div className=" xl:w-1/2 h-1/2 justify-center items-center w-full flex flex-col">
           <h1 className="text-8xl max-sm:text-4xl font-bold mt-20"> Welcome</h1>
-          <p className="font-normal mt-[16px] text-center text-xl max-sm:w-80 max-sm:text-sm">
+          <p className="font-normal mt-[16px] text-center text-xl max-sm:w-80 max-sm:text-md">
             Our educational program is meticulously designed to ensure that
             computer lessons are not only informative, but also engaging and
             enjoyable for learners of all backgrounds and skill levels.
