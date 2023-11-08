@@ -26,7 +26,7 @@ export const allActivities = [
       "In this activity students will explore how binary numbers are used to represent standard numbers. They will do so by creating cards similar to a playing card and manipulating those cards to create binary representations of standard numbers. Each card will have dots on them representing the different binary number values. Once students get the basic idea of binary numbers and follow along with examples from the teacher, they can complete their own conversions using the cards they created.",
     instructionPDF: "/BinaryNumbersInstructions.pdf",
     worksheetPDF: "/BinaryNumbersWorksheet.pdf",
-    keyPDF: " /BinaryNumbersKey.pdf",
+    keyPDF: " /BinaryNumbersWorksheetKey.pdf",
     subdesc: "Paper Activity",
     path: "/details/:activityIndex",
     img: "/Paper.png",
