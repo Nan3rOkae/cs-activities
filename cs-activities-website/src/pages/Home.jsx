@@ -25,7 +25,7 @@ export default function App() {
             computer lessons are not only informative, but also engaging and
             enjoyable for learners of all backgrounds and skill levels.
           </p>
-          <Button label="View Activities"/>
+          <Button label="View Activities" />
         </div>
         <div className="mt-8 max-sm:mt-2">
           <h1 className="font-bold text-4xl max-sm:text-3xl">
@@ -37,7 +37,7 @@ export default function App() {
             <Link
               key={index}
               to={`/details/${index}`}
-              className="block shadow-md px-8 py-8 border-black border-1 hover:text-yellow-500 rounded-xl max-sm:w-[350px]">
+              className="block  px-8 py-8 border-black border-1 hover:text-yellow-500 hover:shadow-xl rounded-xl max-sm:w-[350px]">
               <Card className="w-full h-[150px]">
                 <CardHeader className="flex gap-3">
                   <div className="flex flex-col">

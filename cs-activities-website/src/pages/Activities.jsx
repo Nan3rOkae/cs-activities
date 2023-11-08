@@ -38,7 +38,7 @@ export default function Activities() {
             <Link
               key={index}
               to={`/details/${index}`}
-              className="block shadow-md px-8 py-8 border-black border-1 hover:text-yellow-500 rounded-xl max-sm:w-[350px]">
+              className="block px-8 py-8 border-black border-1 hover:text-yellow-500 hover:shadow-xl rounded-xl max-sm:w-[350px]">
               <Card className="w-full h-[150px]">
                 <CardHeader className="flex gap-3">
                   <div className="flex flex-col">
